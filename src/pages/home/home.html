@@ -1,0 +1,65 @@
+<ion-header>
+
+  <div align="center">
+      <ion-avatar >
+         <p class="p1">Harvard</p><img src="../../assets/logo.jpg">
+        </ion-avatar><br>
+        <br>
+        <h1>Westlake School</h1>
+  </div>
+ 
+</ion-header>
+
+<ion-content class="bg">
+  <ion-card>
+  <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/maths.jpg">
+      </ion-avatar>
+      <h2><b>Compulsory Course</b></h2>
+    </ion-item>
+  
+    <ion-card-content>
+      <p><b>Mathematics</b> - The study of numbers, equations, functions, and geometric shapes (see geometry) and their relationships.</p>
+    </ion-card-content>
+
+    <ion-item>
+      <p><b>Price: R1500</b></p>
+    </ion-item>
+  </ion-card>
+ <hr>
+
+
+ <ion-card *ngFor="let a of you; let i = index">
+   <div (click)="Nexts(i)">
+  <ion-item>
+      <ion-avatar item-start>
+          <img [src]="url" alt="X">
+      </ion-avatar>
+      <h2><b>{{a.Name}}</b></h2>
+    </ion-item>
+ 
+  
+    <ion-card-content>
+      <p><b>{{a.Name}}</b> - {{a.Description}}.</p>
+    </ion-card-content>
+
+    <ion-item>
+      <p><b>Price: R{{a.Price}}</b></p>
+    </ion-item>
+    
+  </div>
+  <br>
+  <p class="p2">To delete & edit information please click this card!</p>
+  </ion-card>
+ 
+
+    <ion-footer>
+      <ion-toolbar color="dark">
+        <div align="center">
+           <button ion-button round small color="light" (click)="Next()">Add Course</button><br>
+        </div>
+       
+      </ion-toolbar>
+    </ion-footer>
+</ion-content>

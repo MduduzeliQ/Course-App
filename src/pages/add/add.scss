@@ -1,0 +1,27 @@
+page-add {
+ion-title{
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0);
+    font-weight: bold;
+
+}
+img{
+    height: 220px;
+    width: 414px;
+}
+ion-content{
+    background-image: url('../../assets/bground.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ion-card.card{
+    opacity: 0.60;
+    background: rgb(240, 232, 166);
+    box-shadow: 2px 4px black;
+}
+img{
+    opacity: 0.50;
+    box-shadow: 2px 4px black;
+}
+}

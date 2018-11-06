@@ -1,0 +1,36 @@
+page-home {
+ion-avatar{
+    height: 45px;
+    width: 50px;
+}
+ion-title{
+    text-align: left;
+}
+ion-footer{
+    position: fixed;
+    clear: both;
+}
+.bg{
+    background-image: url('../../assets/bground.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ion-card.card{
+    opacity: 0.90;
+    background: rgb(240, 232, 166);
+    box-shadow: 2px 4px black;
+}
+h1{
+    color:black;
+}
+.p1{
+    color: black;
+}
+.p2{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    background-color: white;
+}
+}

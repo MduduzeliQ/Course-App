@@ -1,0 +1,31 @@
+
+<ion-header>
+<ion-title>Add Course so that it will be added on the list.</ion-title>
+</ion-header>
+
+
+<ion-content>
+  <div>
+    <img [src]="url" alt="image">
+    <input type="file" accept="image/jpg, image/png, image/gif" (change)="insertImage($event)">
+  </div>
+    <ion-card>
+        <ion-item>
+            <ion-label floating>Subject-Name</ion-label>
+            <ion-input type="text" [(ngModel)]="Name"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label floating>Subject-Description</ion-label>
+            <ion-input type="text" [(ngModel)]="Description"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label floating>Subject-Price</ion-label>
+            <ion-input type="text" [(ngModel)]="Price"></ion-input>
+          </ion-item>
+        
+        </ion-card>
+        <div align="center">
+              <button ion-button round small color="dark" (click)="AddMethod()">add Course</button>
+        </div>
+    
+</ion-content>

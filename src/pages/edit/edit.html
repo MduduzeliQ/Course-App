@@ -1,0 +1,30 @@
+
+<ion-header>
+    <ion-title>Updating Information</ion-title>
+</ion-header>
+
+
+<ion-content>
+    <div>
+        <img [src]="url" alt="image">
+        <input type="file" accept="image/jpg, image/png, image/gif" (change)="insertImage($event)">
+      </div>
+    <ion-card class="card">
+        <ion-item>
+            <ion-label floating>Subject-Name</ion-label>
+            <ion-input type="text" [(ngModel)]="Name"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label floating>Subject-Description</ion-label>
+            <ion-input type="text" [(ngModel)]="Description"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label floating>Subject-Price</ion-label>
+            <ion-input type="text" [(ngModel)]="Price"></ion-input>
+          </ion-item>
+        
+        </ion-card>
+        <div align="center">
+            <button ion-button round small color="dark" (click)="Next()">Update</button><br>
+         </div>
+</ion-content>
